@@ -1,0 +1,30 @@
+.banner{
+    margin: auto;
+    width: 98vw;
+    height: 80vh;
+}
+
+.banner img{
+    z-index: 1;
+    width: 98vw;
+    height: 80vh;
+    position: absolute;
+}
+.banner .div1, .div2, .div3{
+    
+    width: 98vw;
+    height: 40vh;
+    background-color: white;
+    opacity: 0.4;
+    z-index: 2;
+    position: absolute;
+    bottom: 50px;
+}
+.banner .div2{
+    height: 35vh;
+    opacity: 0.4;
+}
+.banner .div3{
+    height: 30vh;
+    opacity: 0.4;
+}

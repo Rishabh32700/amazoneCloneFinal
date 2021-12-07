@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    box-shadow: 2px 2px 5px 5px grey;
+    width: 60vw;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.description, .img, .pricedetails{
+    height: 90%;
+}
+
+.img{
+    width:40%;
+    display: flex;
+    justify-content: center;
+}
+
+.img img{
+    height: 50%;
+}
+
+.description{
+    width: 30%;
+}
+
+.description h1{
+    font-family: sans-serif;
+}
+
+.description .brand{
+    margin: 30px 0px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: rgb(49, 49, 49);
+}
+.description .mrp
+{
+    margin: 30px 0px 0px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: rgb(95, 95, 95);
+}
+.description .mrp span{
+    text-decoration: line-through;
+}
+
+.description .price{
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: rgb(95, 95, 95);
+}
+.description .price span{
+    color: red;
+    font-size: 1.2rem;
+}
+
+.description .instock{
+    color: green;
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+
+
+
+.pricedetails{
+    border: 1px solid grey;
+    width: 25%;
+}
+
+.texts{
+    padding-left: 20px;
+
+}
+
+.pricedetails .soldprice{
+    color: red;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.pricedetails .freedelivery{
+    color: rgb(4, 200, 200);
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+.pricedetails .instock{
+    color: rgb(0, 98, 255);
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.pricedetails p{
+    font-family: sans-serif;
+}
+
+.pricedetails p span{
+    color: rgb(2, 173, 173);
+}
+
+.pricedetails .button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+.pricedetails .button1{
+    margin-top: 30px;
+    background-color: orange;
+}
+
+.pricedetails .button2{
+    margin-top: 10px;
+    background-color: rgb(255, 230, 0);
+}
+
+.pricedetails button{
+    display: block;
+    width: 97%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+@media only screen and (min-width:768px){
+    .container{
+        width: 98vh;
+    }
+}
+@media only screen and (max-width:425px){
+    .container{
+        width: 90%;
+        flex-direction: column; 
+        justify-content: flex-start; 
+        height: auto;  
+    }
+    .img img{
+        flex-direction: row;
+        height: 300px;
+    }
+    .description{
+        width: 100%;
+    }
+    .pricedetails{
+        width: 100%;
+    }
+}
+

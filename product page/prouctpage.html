@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="productpage.css">
+    <!-- <script src="product.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script> -->
+     <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="haircream.png" alt="">
+        </div>
+        <div class="description">
+            <h1>Sanctus nourishing hair spa cream mask, Anti-dandruff</h1>
+            <p class="brand">Brand : Sanctus</p>
+            <hr>
+            <p class="mrp">MRP :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>$4,900</span></p>
+            <p class="price">Price :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>$2000</span></p>
+            <p class="instock">InStock&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        </div>
+        <div class="pricedetails">
+            <div class="texts">
+                <h1 class="soldprice">$2000</h1>
+                <h2 class="freedelivery">Free Delivery</h2>
+                <h2 class="instock">InStock</h2>
+                <p>Sold by <span>Sonet solution PVT. LTD.</span>and <span>fulfill by Amazon</span></p>
+            </div>
+            <div class="button">
+                <button class="button1" onclick="addtocart()">Add to cart</button>
+                <button class="button2">Buy now</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".container .description h1").innerHTML=localStorage.getItem("head");
+        document.querySelector(".container .description .price span").innerHTML="$"+localStorage.getItem("price");
+        document.querySelector(".container .img img").src=localStorage.getItem("image");
+    </script>
+    <script>
+        let obj = {
+            "price" : localStorage.getItem("price"),
+            "name" : localStorage.getItem("head"),
+            "image" : src=localStorage.getItem("image")
+        }
+        var id = localStorage.getItem("id")
+        console.log(id)
+        const firebaseConfig = {
+    apiKey: "AIzaSyBiHiJftR3SsmUC6xejsU3mMo7yLce8Z-M",
+    authDomain: "auth-d6469.firebaseapp.com",
+    projectId: "auth-d6469",
+    storageBucket: "auth-d6469.appspot.com",
+    messagingSenderId: "610199334681",
+    appId: "1:610199334681:web:d39a14a0ebd6371963df88"
+  };
+
+firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+        async function addtocart(){
+            var res = await db.collection("users").doc(id).get()
+            console.log(res.data())
+            db.collection("users").doc(id).update({
+                cart:[...res.data().cart,obj],
+                
+            })
+        }
+    </script>
+</body>
+</html>

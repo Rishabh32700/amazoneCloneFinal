@@ -1,0 +1,87 @@
+
+.first{
+    display: flex;
+    /* border: 5px solid red; */
+    position: absolute;
+    top: 400px;
+    left: 25px;
+    height: 90vh;
+    width: 96vw;
+    z-index:  5;
+}
+.second{
+    display: flex;
+    /* border: 5px solid red; */
+    position: relative;
+    top: 100px;
+    left: 25px;
+    height: 60vh;
+    width: 96vw;
+    z-index:  5;
+}
+
+.innerleft{
+    display: flex;
+    margin-top: 5px;
+    /* border: 2px solid red; */
+    height: 55vh;
+    width: 70vw;
+}
+
+.innerleft .one, .innerleft .two, .innerleft .three{
+    /* border: 2px solid red; */
+    margin: 10px;
+    height: 50vh;
+    width: 50vw;
+    background-color: white;
+}
+
+
+.innerleft .one img,
+.innerleft .two img,
+.innerleft .three img{
+    margin: 7px;
+    height: 155px;
+    width: 157px;
+}
+
+.innerleft .three img{
+    margin-top: 0%;
+    margin-left: 5%;
+    height: 80%;
+    width: 90%;
+}
+.innerright{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    /* border: 2px solid red; */
+    height: 55vh;
+    width: 60vw;
+}
+
+.innerright .one{
+    /* border: 2px solid red; */
+    margin: 10px;
+    height: 20vh;
+    width: 96%;
+    background-color: white;
+}
+.innerright .two{
+    /* border: 2px solid red; */
+    margin: 10px;
+    height: 30vh;
+    width: 80%;
+    background-color: white;
+    margin: auto;
+}
+
+
+.innerright button{
+    margin: 40px 20px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F4CA09;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sign In</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="../firebase.js"></script>
+</head>
+    <body>
+        <img src="logo.png" alt="Amazon.com" />
+        <div id="signInBorder">
+            <p id="SignInTxt">
+                Sign in
+            </p>
+
+            <label>
+                <strong>Email (phone for mobile accounts)</strong>
+                <br>
+                <input type="email" name="email" value="" id="email">
+            </label>
+            <br>
+            <label>
+                <strong>Password</strong>
+                <span><a href="#" id="forgotpassword">Forgot your password?</a></span>
+                <br>
+                <input type="password" name="password" value="" id="password">
+            </label>
+            <div>
+                <button onclick="signIn()" id="signIp">Sign in</button>
+            </div>
+            <div id="createAccount">
+                <h2><span>New to Amazon?</span></h2>
+                <a href="/signup page/signup.html"><button id="newAccount" name="newAcct">Create your Amazon account</button></a>
+            </div>
+        </div>
+        <hr id="footer">
+        <div class="extra">
+            <p class="links"><a href="#" id="first">Conditions of Use</a>
+                <a href="#">Notice of Use</a>
+                <a href="#">Help</a>
+            </p>
+            <p class="links" id="special">
+                © 1996-2016, Amazon.com, Inc. or its affiliates
+            </p>
+        </div>
+
+        <script src="form.js"></script>
+
+    </body>
+</html>

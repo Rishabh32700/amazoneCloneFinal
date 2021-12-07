@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="container.css">
+    <link rel="stylesheet" href="amazonslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="left dflex">
+            <a href="#"><img src="amazon.png" alt="logo" class="logo"><span>.in</span></a>
+            <div class="item item1">
+                <p><i class="fa fa-map-marker"></i>Hello,</p>
+                <h5>enter your address</h5>
+            </div>
+        </div>
+        <div class="searchBox dflex">
+            <div class="box">
+                <div class="dflex">
+                    <button class="all" type="button">
+                        All &nbsp;&nbsp;<i class="fa fa-sort-desc"></i>
+                    </button>
+                    <input type="text">
+                    <button class="search" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="right dflex">
+            <div class="item item2">
+                <i class="fa fa-flag"></i><i class="fa fa-sort-desc"></i>
+            </div>
+            <a href="/amazonClone arpit final/amazonClone/index.html"><div class="item">
+                <p>Hello</p>
+                <h5>Account & Lists</h5>
+            </div></a>
+            <a href="/amazonClone arpit final/amazonClone/index.html"><div class="item">
+                <p>Refund</p>
+                <h5>& Order</h5>
+            </div></a>
+            <a href="/Amazon Clone Trupti/Project/index.html"><div class="item">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>Cart
+            </div></a>
+        </div>
+    </nav>
+    <nav class="subnavigation">
+        <ul class="submenu">
+            <a href="#"><i class="fa fa-bars"></i>
+                <li>All</li>
+            </a>
+            <a href="#">
+                <li>Gift Cards</li>
+            </a>
+            <a href="#">
+                <li>Amazon Pay</li>
+            </a>
+            <a href="#">
+                <li>Amazon Business <i class="fa fa-sort-des"></i></li>
+            </a>
+            <a href="#">
+                <li>Pet Supplies</li>
+            </a>
+            <a href="#">
+                <li>Kindle ebooks</li>
+            </a>
+            <a href="#">
+                <li>user's Amazon</li>
+            </a>
+            <a href="#">
+                <li>Gift ideas</li>
+            </a>
+            <a href="#">
+                <li>Video games</li>
+            </a>
+            <a href="#">
+                <li>AmazonBasics</li>
+            </a>
+            <a href="#">
+                <li>coupons</li>
+            </a>
+        </ul>
+        <ul>
+            <a href="#">
+                <i class="fa fa-amazon bg"></i>
+                <li class="li">Shopping made easy|Download the app</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="banner">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+        <img src="bg.jpg" alt="">
+    </div>
+
+    <div class="container">
+        <div class="first">
+            <div class="innerleft">
+                <div class="one">
+                        <h3 style="color: black;margin: 5px">Now save bill details & get timely reminders</h3>
+                        <img src="1.jpg" alt="">
+                        <img src="2.jpg" alt="">
+                        <img src="3.jpg" alt="">
+                        <img src="4.jpg" alt="">
+                </div>
+                <div class="two">
+                    <h3 style="color: black;margin: 5px; margin-bottom: 25px;">Top picks for your home</h3>
+                        <img src="5.jpg" alt="">
+                        <img src="6.jpg" alt="">
+                        <img src="7.jpg" alt="">
+                        <img src="Grocery.jpg" alt="">
+                </div>
+                <div class="three">
+                    <h3 style="color: black;margin: 20px">Pay your credit card bills on Amazon</h3>
+                        <img src="9.jpg" alt="">
+                      
+                </div>
+            </div>
+            <div class="innerright">
+                <div class="one">
+                    <h2 style="color: black; text-align: center; margin-top: 25px;">Sign in for your best experience</h2>
+                    <button>Sign in securely</button>
+                </div>
+                <div class="two">
+                    <img src="lappy.jpg" alt="" width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+        <div class="first">
+            <div class="innerleft">
+                <div class="one">
+                        <h3 style="color: black;margin: 20px">Now save bill details & get timely reminders</h3>
+                        <img src="1.jpg" alt="">
+                        <img src="2.jpg" alt="">
+                        <img src="3.jpg" alt="">
+                        <img src="4.jpg" alt="">
+                </div>
+                <div class="two">
+                    <h3 style="color: black;margin: 20px;">Top picks for your home</h3>
+                        <img src="5.jpg" alt="">
+                        <img src="6.jpg" alt="">
+                        <img src="7.jpg" alt="">
+                        <img src="Grocery.jpg" alt="">
+                </div>
+                <div class="three">
+                    <h3 style="color: black;margin: 20px">Pay your credit card bills on Amazon</h3>
+                        <img src="9.jpg" alt="">
+                      
+                </div>
+            </div>
+            <div class="innerright">
+                <div class="one">
+                    <h2 style="color: black; text-align: center; margin-top: 25px;">Sign in for your best experience</h2>
+                    <button>Sign in securely</button>
+                </div>
+                <div class="two">
+                    <img src="lappy.jpg" alt="" width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <div class="innerleft">
+                <div class="one">
+                        <h3 style="color: black;margin: 5px">Now save bill details & get timely reminders</h3>
+                        <img src="1.jpg" alt="">
+                        <img src="2.jpg" alt="">
+                        <img src="3.jpg" alt="">
+                        <img src="4.jpg" alt="">
+                </div>
+                <div class="two">
+                    <h3 style="color: black;margin: 5px; margin-bottom: 25px;">Top picks for your home</h3>
+                        <img src="5.jpg" alt="">
+                        <img src="6.jpg" alt="">
+                        <img src="7.jpg" alt="">
+                        <img src="Grocery.jpg" alt="">
+                </div>
+                <div class="three">
+                    <h3 style="color: black;margin: 20px">Pay your credit card bills on Amazon</h3>
+                        <img src="9.jpg" alt="">
+                      
+                </div>
+            </div>
+            <div class="innerright">
+                <div class="one">
+                    <h2 style="color: black; text-align: center; margin-top: 25px;">Sign in for your best experience</h2>
+                    <button>Sign in securely</button>
+                </div>
+                <div class="two">
+                    <img src="lappy.jpg" alt="" width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="slider1"> -->
+            <!-- <div class="preview_control_area"> -->
+                <div class="slider1 data_preview_area">
+                    <!-- <h1>More Everyday Essentials To </h1> -->
+                  <!-- <div class="data_preview_frame"><div class="data_preview_content">
+                      <a href="/amazon clone rishabh/prouctpage.html"><img src="chess.jpg" class="images" alt=""></a>
+                  </div></div>
+                  <div class="data_preview_frame"><div class="data_preview_content">
+                      <a href="/amazon clone rishabh/prouctpage.html"><img src="chess.jpg" alt="" class="images"></a>
+                  </div></div>
+                  <div class="data_preview_frame"><div class="data_preview_content">
+                      <a href="/amazon clone rishabh/prouctpage.html"><img src="chess.jpg" alt="" class="images"></a>
+                  </div></div>
+                  <div class="data_preview_frame"><div class="data_preview_content">
+                      <a href="/amazon clone rishabh/prouctpage.html"><img src="chess.jpg" alt="" class="images"></a>
+                  </div></div>
+                  <div class="data_preview_frame"><div class="data_preview_content">
+                      <a href="/amazon clone rishabh/prouctpage.html"><img src="chess.jpg" alt="" class="images"></a>
+                  </div></div>
+                  <div class="data_preview_frame"><div class="data_preview_content">
+                      <a href="/amazon clone rishabh/prouctpage.html"><img src="chess.jpg" alt="" class="images"></a>
+                  </div></div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        </div>
+        
+        <div class="slider1">
+
+        </div>
+        <div class="second">
+
+        </div>
+        <div class="slider1">
+            
+        </div>
+        <div class="slider1">
+
+        </div>
+    </div>
+
+    <script src="../firebase.js"></script>
+    <script>
+        generateItems();
+    </script>
+
+</body>
+
+</html>
